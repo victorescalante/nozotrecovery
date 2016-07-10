@@ -1,11 +1,25 @@
 
 /* themplete for Nozo by @victorlt*/
 $color-red-default: #CF081C;
+$color-blue-default:#00B3F0;
 .main{
 
 
   .text-red{
     color: $color-red-default;
+  }
+
+  .text-white{
+    color: white;
+  }
+
+  #fh5co-testimony{
+    background-color: #F26029;
+  }
+  #fh5co-subscribe{
+    .btn{
+      background: $color-red-default;
+    }
   }
 
   #fh5co-features{
@@ -15,16 +29,53 @@ $color-red-default: #CF081C;
     }
   }
 
-  & #fh5co-clients{
+  #fh5co-clients{
     background-color: $color-red-default;
   }
+
+  #fh5co-pricing{
+    background-color: $color-red-default;
+    .pricing-feature{
+      border-top: 10px solid $color-blue-default;
+    }
+    .fh5co-figure-lead-name{
+      color:#F26029;
+    }
+
+    .fh5co-section-heading{
+      h2{
+        color:white;
+      }
+      .fh5co-sub{
+        color:white;
+      }
+    }
+  }
+
+ul{
+  li{
+      &.important-person{
+        color: $color-red-default;
+      }
+  }
+}
+
 
   .img-responsive{
 
     &.img-center{
       margin: 0 auto;
+      &.filter-one{
+        -webkit-filter: contrast(150%);
+        filter: contrast(150%);
+      }
     }
 
+  }
+
+  .title-form{
+    color: white;
+    margin-bottom: 30px;
   }
 
 }
