@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,oCAAoC;AAKlC,eAAS;EACP,KAAK,EALW,OAAO;AAQzB,qBAAe;EACb,gBAAgB,EAAE,OAAO;EACzB,wBAAG;IACD,KAAK,EAAE,IAAI;AAIf,oBAAgB;EACd,gBAAgB,EAhBA,OAAO;AAqBvB,gCAAY;EACV,MAAM,EAAE,MAAM",
+"sources": ["../sass/nozo.scss"],
+"names": [],
+"file": "nozo.css"
+}

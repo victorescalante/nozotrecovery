@@ -1,0 +1,30 @@
+
+/* themplete for Nozo by @victorlt*/
+$color-red-default: #CF081C;
+.main{
+
+
+  .text-red{
+    color: $color-red-default;
+  }
+
+  #fh5co-features{
+    background-color: #1B1B1B;
+    h2 {
+      color: #FFF;
+    }
+  }
+
+  & #fh5co-clients{
+    background-color: $color-red-default;
+  }
+
+  .img-responsive{
+
+    &.img-center{
+      margin: 0 auto;
+    }
+
+  }
+
+}
