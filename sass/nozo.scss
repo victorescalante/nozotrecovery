@@ -78,4 +78,31 @@ ul{
     margin-bottom: 30px;
   }
 
+
+
+
+
+
+}
+
+/* Styles for Slider */
+.my_slider{
+  position:relative;
+
+  i{
+    font-size: 5rem;
+    color: white;
+  }
+  .slick-prev-custom{
+    position:absolute;
+    z-index: 5;
+    left: 15px;
+    top: 50%;
+  }
+  .slick-next-custom{
+    position: absolute;
+    z-index: 5;
+    right: 15px;
+    top: 50%;
+  }
 }

@@ -35,7 +35,11 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
+	<!-- Styles for Slider -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
+	<!-- Font awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -48,8 +52,8 @@
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<!-- Salvattore -->
-	<link rel="stylesheet" href="css/salvattore.css">
+	<!-- Salvattore
+	<link rel="stylesheet" href="css/salvattore.css"> -->
 	<!-- Theme Style -->
 	<link rel="stylesheet" href="css/prueba.css">
 	<!-- Styles for themplete -->
@@ -77,7 +81,7 @@
 			<li><a href="#" data-nav-section="events">Eventos</a></li>
 			<li><a href="#" data-nav-section="contact">Contáctanos</a></li>
 		</ul>
-		<h3 class="fh5co-lead">Connect with us</h3>
+		<h3 class="fh5co-lead">Redes sociales</h3>
 		<p class="fh5co-social-icons">
 			<a href="#"><i class="icon-twitter"></i></a>
 			<a href="https://www.facebook.com/NozotMX/"><i class="icon-facebook"></i></a>
@@ -100,12 +104,18 @@
 
 	<div id="fh5co-page">
 		<div id="fh5co-wrap">
-
-
-			<div class="hero-unit">
-
-
+			<!-- In this moment start slider -->
+			<div class="my_slider">
+				<!-- First Slider -->
+				<div class="hero-unit" style="background-image:url('http://nozotrecovery.com.mx/site/images/fondo_01.jpg');">
+				</div>
+				<!-- End first slider -->
+				<!-- Second Slider -->
+				<div class="hero-unit" style="background-image:url('http://nozotrecovery.com.mx/site/images/fondo_01.jpg');">
+				</div>
+				<!-- End second slider -->
 			</div>
+
 			<!-- END .header -->
 			<div class="main">
 				<div id="fh5co-main">
@@ -512,7 +522,7 @@ Lista para los entrenamientos de esta semana y para el Tri Chiapas!.&rdquo;</p>
 									</a>
 								</div>
 								<div class="col-md-4 to-animate">
-									<a href="#" class="fh5co-figure active pricing-feature">
+									<a href="#" class="fh5co-figure">
 										<span class="fh5co-price">$200<span>/sessión</span></span>
 										<h2 class="fh5co-figure-lead-name">NOZOT XXXL</h2>
 										<h3 class="fh5co-figure-lead">3 sessiones x semana</h3>
@@ -657,9 +667,7 @@ Lista para los entrenamientos de esta semana y para el Tri Chiapas!.&rdquo;</p>
 						<div class="col-md-3 col-sm-4 col-md-push-3">
 							<h3 class="fh5co-lead">Redes Sociales</h3>
 							<ul>
-								<li><a href="https://www.facebook.com/NozotMX/">Facebook NozotNormaTec</a></li>
-								<li><a href="#">Twitter NozotNormaTec</a></li>
-								<li><a href="#">Instagram NozotNormaTec</a></li>
+								<li><a href="https://www.facebook.com/NozotMX/" style="text-aling='center'"><i class="icon-facebook"></i> NozotNormaTec</a></li>
 							</ul>
 						</div>
 
@@ -667,11 +675,7 @@ Lista para los entrenamientos de esta semana y para el Tri Chiapas!.&rdquo;</p>
 							<div class="fh5co-footer-logo"><a href="index.html">Nozotrec</a></div>
 							<p class="fh5co-copyright"><small>&copy; 2016. All Rights Reserved. <br>	by <a href="#" target="_blank">@victorlt</a></small></p>
 							<p class="fh5co-social-icons">
-								<a href="#"><i class="icon-twitter"></i></a>
 								<a href="https://www.facebook.com/NozotMX/"><i class="icon-facebook"></i></a>
-								<a href="#"><i class="icon-instagram"></i></a>
-								<a href="#"><i class="icon-dribbble"></i></a>
-								<a href="#"><i class="icon-youtube"></i></a>
 							</p>
 						</div>
 
@@ -698,6 +702,27 @@ Lista para los entrenamientos de esta semana y para el Tri Chiapas!.&rdquo;</p>
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+
+	<!-- Slider for index images -->
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<!-- And -->
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+		$('.my_slider').slick({
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  adaptiveHeight: true,
+			prevArrow:'<a class="slick-prev-custom"><i class="fa fa-angle-left" aria-hidden="true"></i></a>',
+			nextArrow:'<a class="slick-next-custom"><i class="fa fa-angle-right" aria-hidden="true"></i></a>',
+		});
+	});
+
+	</script>
+
+
 
 
 

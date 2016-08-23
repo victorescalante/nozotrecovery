@@ -34,4 +34,21 @@
   color: white;
   margin-bottom: 30px; }
 
+/* Styles for Slider */
+.my_slider {
+  position: relative; }
+  .my_slider i {
+    font-size: 5rem;
+    color: white; }
+  .my_slider .slick-prev-custom {
+    position: absolute;
+    z-index: 5;
+    left: 15px;
+    top: 50%; }
+  .my_slider .slick-next-custom {
+    position: absolute;
+    z-index: 5;
+    right: 15px;
+    top: 50%; }
+
 /*# sourceMappingURL=nozo.css.map */
